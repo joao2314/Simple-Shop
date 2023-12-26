@@ -59,7 +59,6 @@ public class Compras {
                System.err.println("Erro no programa");
                 break;
         }
-           System.out.println("\nSe deseja finalizar a compra digite 'sim'");
            int line1 = scan.nextInt()-1;
 
            carrinho += ", " + vector[line1];
