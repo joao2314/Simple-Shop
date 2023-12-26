@@ -28,6 +28,7 @@ public class Compras {
                 break;
             case 3:
                 divida += 600;
+                break;
             default:
                System.err.println("Erro no programa");
                 break;
@@ -46,7 +47,9 @@ public class Compras {
            System.out.print("\nEscolha oque voce quer comprar: \n\n1 - Iphone 14: R$1250\n2 - Playstation 5: R$2760\n3 - Grand Theft Auro VI: R$600\n");
            System.out.println("\nCarrinho: " + carrinho);
            System.out.println("A pagar: R$" + divida);
-            switch (shop) {
+           
+           int line1 = scan.nextInt()-1;
+           switch (line1+1) {
             case 1:
                 divida += 1250;
                 break;
@@ -55,11 +58,11 @@ public class Compras {
                 break;
             case 3:
                 divida += 600;
+                break;
             default:
                System.err.println("Erro no programa");
                 break;
         }
-           int line1 = scan.nextInt()-1;
 
            carrinho += ", " + vector[line1];
            System.out.println("Voce escolheu: " + vector[line1]);
